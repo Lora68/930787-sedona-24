@@ -12,16 +12,16 @@
         <img src="img/index-logo.png" width="140" height="72" alt="Логотип Седона" class="logo">
       </a>
     <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="info. html">Информация</a></li>
+        <li><a href="foto. html">Фото и видео</a></li>
+        <li><a href="map. html">Карта штата</a></li>
+        <li><a href="hotel. html">Гостиницы</a></li>
     </ul>
       </nav>
     </header>
 <main>
   <div class="welcome">
-    <img src= "img/welcome.png" alt="welcome">
+    <img src= "img/welcome.png" alt="welcome" >
     <img src= "img/polygon.svg" alt="polygon">
   </div>
   <section>
@@ -72,15 +72,24 @@
  </section>
   <section class="interested">
  <h2>Заинтересовались?</h2>
-  <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+  <p >Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
   <img src="img/map.png" alt="map">
-  <div class="search_hotel">
+  <form class="search_hotel" action="https://echo.htmlacademy.ru" method="post">
     <p>ПОИСК ГОСТИНИЦЫ В седоне</p>
-      <p>Дата заезда:24 апреля 2017</p>
-      <p>Дата выезда:24 апреля 2017</p>
-      <p>Взрослые 2 Дети 1</p>
-        <button type="submit">Найти</button>
-  </div>
+      <label><p>Дата заезда:</p>
+        <input type="text" name="date" value="" placeholder="24.04.2017" ></label>
+      <label><p>Дата выезда:</p>
+        <input type="text" name="date" value="" placeholder="24.04.2017" ></label>
+      <label for="adult"><p>Взрослые</p></label>
+        <button class="add" aria-label="Добавить взрослого">+</button>
+        <input name="adult" id="adult" type="number" value="2">
+        <button class="subtract" aria-label="Убрать взрослого">-</button>
+      <label for="children"><p>Дети</p></label>
+        <button class="add" aria-label="Добавить ребенка">+</button>
+        <input id="children" name="children" type="number" value="1">
+        <button class="subtract" aria-label="Убрать ребенка">-</button>
+      <button type="submit">Найти</button>
+  </form>
     </section>
 
 </main>
@@ -88,9 +97,9 @@
 <footer>
   <p>#visitSEDONA</p>
   <ul>
-    <li><a class="social-button" href="#"><img src="img/twitter-icon.svg" alt="twitter"></a></li>
-    <li><a class="social-button" href="#"><img src="img/faceboock-icon.svg" alt="faceboock"></a></li>
-    <li><a class="social-button" href="#"><img src="img/youtube-icon.svg" alt="youtube"></a></li>
+    <li><a class="social-button" href="#" aria-label="Мы в твиттер"><img src="img/twitter-icon.svg" alt="twitter"></a></li>
+    <li><a class="social-button" href="#" aria-label="Мы в фейсбук"><img src="img/faceboock-icon.svg" alt="faceboock"></a></li>
+    <li><a class="social-button" href="#" aria-label="Мы на ютубе"><img src="img/youtube-icon.svg" alt="youtube"></a></li>
   </ul>
   <p>Website by
     <a class="main-header-logo" href="htmlacademy.ru">

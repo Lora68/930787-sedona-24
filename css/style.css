@@ -1,7 +1,18 @@
 .welcome{
-  background: url(../img/header-bg.jpg) no-repeat;
+  background: url(../img/header-bg.png) no-repeat;
 }
 
 .social-button img{
   background-color: #81b3d2;
+}
+
+.visually-hidden{
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: -1px;
+  margin: 0px;
+  top:0;
+  left: 0;
+  font-size: 0.1px;
 }
