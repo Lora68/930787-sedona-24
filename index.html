@@ -12,17 +12,17 @@
         <img src="img/index-logo.png" width="140" height="72" alt="Логотип Седона" class="logo">
       </a>
     <ul>
-        <li><a href="info. html">Информация</a></li>
-        <li><a href="foto. html">Фото и видео</a></li>
-        <li><a href="map. html">Карта штата</a></li>
-        <li><a href="hotel. html">Гостиницы</a></li>
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="foto.html">Фото и видео</a></li>
+        <li><a href="img/map.png">Карта штата</a></li>
+        <li><a href="inner.html">Гостиницы</a></li>
     </ul>
       </nav>
     </header>
 <main>
   <div class="welcome">
-    <img src= "img/welcome.png" alt="welcome" >
-    <img src= "img/polygon.svg" alt="polygon">
+    <img src= "img/welcome.png" width="1200" height="800" alt="Добро пожаловать в Сидону" >
+  /*  <img src= "img/polygon.svg" width="1201" height="59" alt="Многоугольник">*/
   </div>
   <section>
     <p>Седона — небольшой городок в Аризоне,
@@ -34,24 +34,24 @@
     <h3>Настоящий городок</h3>
     <p>№1</p>
     <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-    <img src="img/foto_1.png" alt="advantage_1">
+    <img src="img/foto_1.png" width="800" height="401" alt="Преимущество_1">
     </div>
    <div class="advantage_1_include">
-    <img src="img/home.svg" alt="home">
+    <img src="img/home.svg" width="75" height="72" alt="Жилье">
     <h4>Жилье</h4>
     <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 
-    <img src="img/food.svg" alt="food">
+    <img src="img/food.svg" width="74" height="70" alt="Еда">
     <h4>Еда</h4>
     <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 
-    <img src="img/souvenirs.svg" alt="souvenir">
+    <img src="img/souvenirs.svg" width="64" height="76" alt="Сувиниры">
     <h4>Сувиниры</h4>
     <p>Не только китайского, но и местного производства!</p>
    </div>
 
    <div class="advantage_2">
-     <img src="img/foto_2.png" alt="bridge">
+     <img src="img/foto_2.png" width="800" height="400" alt="Мост">
      <h3>Там есть Мост дьявола</h3>
      <p>№2</p>
      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -72,24 +72,32 @@
  </section>
   <section class="interested">
  <h2>Заинтересовались?</h2>
-  <p >Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-  <img src="img/map.png" alt="map">
-  <form class="search_hotel" action="https://echo.htmlacademy.ru" method="post">
-    <p>ПОИСК ГОСТИНИЦЫ В седоне</p>
-      <label><p>Дата заезда:</p>
-        <input type="text" name="date" value="" placeholder="24.04.2017" ></label>
-      <label><p>Дата выезда:</p>
-        <input type="text" name="date" value="" placeholder="24.04.2017" ></label>
-      <label for="adult"><p>Взрослые</p></label>
-        <button class="add" aria-label="Добавить взрослого">+</button>
-        <input name="adult" id="adult" type="number" value="2">
-        <button class="subtract" aria-label="Убрать взрослого">-</button>
-      <label for="children"><p>Дети</p></label>
-        <button class="add" aria-label="Добавить ребенка">+</button>
-        <input id="children" name="children" type="number" value="1">
-        <button class="subtract" aria-label="Убрать ребенка">-</button>
-      <button type="submit">Найти</button>
+  <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+  <p><img src="img/map.png" width="1200" height="594" alt="Карта штата"></p>
+
+      <div class="search">
+      <a href="form.html" >ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+
+    <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="search_data_check-in">
+        <label for="search_data_check-in">Дата заезда</label>
+        <input id="search_data_check-in" type="text" name="date" value="" placeholder="24.04.2017"></p>
+      <p class="search_data_check-out">
+      <label for="search_data_check-out">Дата выезда</label>
+        <input id="search_data_check-out" type="text" name="date" value="" placeholder="24.04.2017" ></p>
+      <p class="search_adult">
+        <label for="search_adult">Взрослые</label>
+        <button class="search_add" aria-label="Добавить взрослого">+</button>
+        <input name="search_add" id="search_add" type="number" value="2">
+        <button class="subtract" aria-label="Убрать взрослого">-</button></p>
+      <p class="search_cildren">
+      <label for="search_cildren">Дети</label>
+        <button class="search_add" aria-label="Добавить ребенка">+</button>
+        <input id="search_cildren" name="children" type="number" value="1">
+        <button class="subtract" aria-label="Убрать ребенка">-</button></p>
+      <button class="button" type="submit">Найти</button>
   </form>
+</div>
     </section>
 
 </main>
@@ -97,15 +105,17 @@
 <footer>
   <p>#visitSEDONA</p>
   <ul>
-    <li><a class="social-button" href="#" aria-label="Мы в твиттер"><img src="img/twitter-icon.svg" alt="twitter"></a></li>
-    <li><a class="social-button" href="#" aria-label="Мы в фейсбук"><img src="img/faceboock-icon.svg" alt="faceboock"></a></li>
-    <li><a class="social-button" href="#" aria-label="Мы на ютубе"><img src="img/youtube-icon.svg" alt="youtube"></a></li>
+    <li><a class="social-button" href="#" aria-label="Мы в твиттер"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
+    <li><a class="social-button" href="#" aria-label="Мы в фейсбук"><img src="img/faceboock-icon.svg" width="12" height="22" alt="faceboock"></a></li>
+    <li><a class="social-button" href="#" aria-label="Мы на ютубе"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
   </ul>
-  <p>Website by
-    <a class="main-header-logo" href="htmlacademy.ru">
-        <img src="img/logo.svg" alt="сайт htmlacademy">
-    </a>
-    </p>
+  <div class="webcite-by">
+       <span>Webcite by</span>
+       <a class="main-header-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <img src="img/logo.svg" width="115" height="41" alt="сайт htmlacademy">
+       </a>
+    </div>
+
 </footer>
 
   </body>
