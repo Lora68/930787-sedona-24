@@ -1,9 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+.main {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 72;
+}
+
+.site-navigation {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover{
+  color: #81b3d2;
+}
+.site-navigation a:focus{
+  color: #000000;
+}
+site-navigation a:hover{
+  color: #766357;
+}
+.advantage {
+  text-align: center;
+
+}
+.advantage_1,
+.advantage_2 {
+   text-align: center;
+   color: #ffffff;
+
+
+   background-color: #88b3d2;
+
+
+}
+.advantage_1 h3,
+.advantage_2  h3 {
+  font-size: 21px;
+}
+
+.history {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.advantage_1_include h4{
+  font-size: 21px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.advantage_other{
+  background-color: #eeeeee;
+}
+
+.advantage_other h3{
+  font-weight: 700;
+  font-size: 21px;
+  color: #000000;
+}
+
+.interested h2{
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .welcome{
   background: url(../img/header-bg.png) no-repeat;
 }
 
+.search .wrapper{
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+}
+
+.search .wrapper a{
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.search_form p{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.search_form input{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.search .button{
+  background: #81b3d2;
+  color: #ffffff;
+  width: 458px;
+  height: 58px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer p{
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li .wrapper{
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
 .social-button img{
   background-color: #81b3d2;
+}
+
+.webcite-by img{
+  color: #231f20;
+}
+/*  стили inner */
+.catalog{
+  list-style: none;
+}
+
+.catalog li h3 a{
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.catalog li p{
+  color: #333333;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog li .rating{
+  color: #666666;
+}
+
+.catalog li .more{
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 17px 8px 17px 7px;
+  background-color: #81b3d2;
+}
+.catalog li .reserv{
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 8px 16px 8px;
+  background-color: #766357;
+
 }
 
 .visually-hidden{
