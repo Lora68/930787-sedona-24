@@ -22,10 +22,13 @@ a {
 
 .site-navigation {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 14px;
   color: #000000;
   text-align: center;
   background-color: #ffffff;
+  list-style: none;
+  font-weight: 700;
+  line-height: 26px;
 }
 .site-navigation .menu_active{
   color: #766357;
@@ -35,11 +38,6 @@ a {
   height: 72px;
 }
 
-.site-navigation {
-  list-style: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
 
 .site-navigation a {
   color: #000000;
@@ -61,12 +59,14 @@ a {
   background-image: url(../img/header-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: cover;
   position: relative;
 }
 
-.welcome .welcome_img{
-  text-align: center;
+.welcome>img{
+  display: block;
+  margin: 0 auto;
+  padding: 100px 76px 90px 82px;
 }
 
 .welcome .polygon{
@@ -103,8 +103,6 @@ a {
   font-size: 21px;
 }
 
-
-
 .advantage_1_include li h4{
   font-size: 21px;
   color: #000000;
@@ -121,7 +119,7 @@ a {
   font-size: 21px;
   color: #000000;
 }
-.interested{
+.interested .info_map{
   text-align: center;
 }
 .interested h2{
@@ -129,9 +127,7 @@ a {
   font-size: 30px;
   font-weight: 700;
 }
-.search .wrapper_search {
-  margin-left: calc(50% - 284px);
-}
+
 
 .search .wrapper_search a {
   color: #ffffff;
@@ -140,9 +136,20 @@ a {
   text-decoration: none;
   background-color: #766357;
   width: 568px;
-  height: 51px;
   display: block;
+  text-align: center;
+  line-height: 18px;
   padding-top: 35px;
+  padding-bottom: 33px;
+}
+
+.search .wrapper_search a:hover,
+.search .wrapper_search a:focus {
+  background: #604e43;
+}
+.search .wrapper_search a:active {
+  background: #503e33;
+  opacity: 0.3;
 }
 
 .search_form p {
@@ -150,7 +157,8 @@ a {
   color: #000000;
 }
 
-.search_form input {
+.search_form .search_item input,
+.search_form .search_item label {
   font-weight: 700;
   color: #000000;
 }
@@ -163,9 +171,6 @@ a {
   font-weight: 700;
 }
 .search .button:hover{
-  background: #669ec0;
-}
-.search .button:focus{
   background: #669ec0;
 }
 .search .button:focus{
@@ -218,7 +223,8 @@ footer ul li a{
 .catalog li h3 a:active{
   color: #000000;
   opacity: 0.3;
-}
+ }
+
 .catalog li p{
   color: #333333;
   }
@@ -264,7 +270,4 @@ footer ul li a{
   top:0;
   left: 0;
   font-size: 0.1px;
-}
-label, input{
-  color: #000000;
 }
