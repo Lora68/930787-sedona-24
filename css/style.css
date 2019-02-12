@@ -10,32 +10,62 @@ body {
   background-color: #f2f2f2;
 }
 
+.conteiner{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
 a {
   text-decoration: none;
 }
+.main-header{
+  margin-bottom: 1px;
+  }
 
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 1px;
+  }
 
-
-.main-navigation {
-  text-align: center;
-}
 
 .site-navigation {
-  font-size: 21px;
-  line-height: 14px;
+  font-size: 14px;
   color: #000000;
-  text-align: center;
-  background-color: #ffffff;
+  background: #ffffff;
   list-style: none;
   font-weight: 700;
   line-height: 26px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
 }
+
+  .site-navigation li:first-child a{
+    padding: 22px 74px 22px 72px ;
+  }
+  .site-navigation li:nth-child(2) a{
+    padding: 22px 68px 22px 73px ;
+    margin-right: 244px;
+  }
+  .site-navigation li:nth-child(3) a{
+    padding: 22px 73px 24px 76px ;
+  }
+  .site-navigation li:last-child a{
+    padding: 22px 72px 22px 88px ;
+  }
+
 .site-navigation .menu_active{
   color: #766357;
+  width:auto;
+  margin: 0;
+  padding: 0;
 }
-.main-header-logo {
-  width: 140px;
-  height: 72px;
+
+.main-header-logo{
+  left: 600px;
+  position: absolute;
+  z-index: 1;
 }
 
 
@@ -78,29 +108,51 @@ a {
 
 .history p{
   text-align: center;
+  color: #333333;
 }
 
 .history p:first-child  {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;
   font-weight: 700;
+  margin-top: 0;
+  padding-top: 60px;
 }
-
+.history p:last-child  {
+  margin-bottom: 0;
+  padding-bottom: 56px;
+}
 .advantage {
   text-align: center;
-
 }
 .advantage_1,
 .advantage_2 {
    text-align: center;
    color: #ffffff;
    background-color: #88b3d2;
+   display: flex;
+   flex-direction: row;
 }
-.advantage_1 h3,
-.advantage_2  h3 {
+
+.advantage_1 .text{
+  padding: 46px 60px 64px 60px;
+}
+.advantage_2 .text{
+  padding: 49px 49px 65px 48px;
+}
+.advantage_1 .text h3,
+.advantage_2 .text  h3 {
   font-size: 21px;
+}
+
+.advantage_1_include{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 60px 0 86px 0;
+  margin: 0;
+  list-style: none;
 }
 
 .advantage_1_include li h4{
@@ -112,6 +164,10 @@ a {
 .advantage_other{
   background-color: #eeeeee;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0 63px 0;
+  margin: 0;
 }
 
 .advantage_other li h3{
@@ -119,16 +175,21 @@ a {
   font-size: 21px;
   color: #000000;
 }
-.interested .info_map{
+.interested{
   text-align: center;
+  background: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding-bottom: 138px;
 }
 .interested h2{
-  color: #000000;
   font-size: 30px;
   font-weight: 700;
+  color: #000000;
+  padding-top: 57px;
+  padding-bottom: 24.9px;
+  margin: 0;
 }
-
-
 .search .wrapper_search a {
   color: #ffffff;
   font-size: 21px;
