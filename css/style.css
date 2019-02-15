@@ -350,11 +350,12 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 26px 72px 30px 72px;
+    height: 250px;
 }
 
 .catalog__inner--left {
     display: flex;
-}
+    }
 
 .catalog__inner--img {
     width: 135px;
@@ -364,7 +365,9 @@ a {
 .catalog__inner--info {
     margin-left: 30px;
 }
-
+.catalog__inner--info h3{
+  margin-top: 0;
+}
 .catalog__inner--info h3 a {
     color: #000000;
     font-size: 21px;
@@ -394,6 +397,7 @@ a {
     color: #ffffff;
     font-weight: 700;
     padding: 17px 8px 17px 7px;
+
     background-color: #81b3d2;
 }
 
