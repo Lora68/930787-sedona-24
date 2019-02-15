@@ -7,87 +7,128 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
-                <img src="img/index-logo.png" width="140" height="72" alt="Логотип Седона">
-            </a>
-            <ul class=site-navigation>
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="foto.html">Фото и видео</a></li>
-                <li><a href="img/map.png">Карта штата</a></li>
-                <li><a href="inner.html" class="menu_active">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="wrap">
 
-        <section class="choice">
-            <h1 class="visually-hidden">Сортировка выбора гостиницы</h1>
-            <!--<img src="img/choice.jpg" width="1200" height="800" alt="сортировка выбора гостиницы">-->
-            <!--Здесь будет форма-->
-        </section>
-        <section class="appointment">
-            <h2 class="visually-hidden">Выбор гостиницы</h2>
-            <ul class="catalog">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/index-logo.png" width="140" height="72" alt="Логотип Седона" class="logo">
+                </a>
+                <ul class="site-navigation">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="foto.html">Фото и видео</a></li>
+                    <li><a href="img/map.png">Карта штата</a></li>
+                    <li><a href="inner.html">Гостиницы</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="choice">
+                <h1 class="visually-hidden">Сортировка выбора гостиницы</h1>
+                <!--<img src="img/choice.jpg" width="1200" height="800" alt="сортировка выбора гостиницы">-->
+                <!--Здесь будет форма-->
+            </section>
+            <section class="appointment">
+                <h2 class="visually-hidden">Выбор гостиницы</h2>
+                <ul class="catalog">
+
+                    <li class="catalog__inner">
+                        <div class="catalog__inner--left">
+                            <div class="catalog__inner--img">
+                                <img src="img/hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort &amp; Spa">
+                            </div>
+                            <div class="catalog__inner--info">
+                                <h3><a href="#">Amara Resort &amp; Spa</a></h3>
+                                <p>Гостиница</p>
+                                <p>ОТ 4000 Р.</p>
+                                <a class="more" href="#">ПОДРОБНЕЕ</a>
+                                <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__inner--right">
+                            <span class="reting"></span>
+                            <p class="rating">рейтинг: 8,5</p>
+                        </div>
+                    </li>
+
+                    <li class="catalog__inner">
+                      <div class="catalog__inner--left">
+                        <div class="catalog__inner--img" >
+                        <img src="img/motel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+                      </div>
+                      <div class="catalog__inner--info">
+                        <h3><a href="#">Desert Quail Inn </a></h3>
+                        <p>Мотель</p>
+                        <p>ОТ 3000 Р.</p>
+                        <a class="more" href="#">ПОДРОБНЕЕ</a>
+                        <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
+                      </div>
+                    </div>
+                  <div class="catalog__inner--right" >
+                        <span class="reting"></span>
+                        <p class="rating">рейтинг: 8,9</p>
+                  </div>
+
+                    </li>
+
+                    <li class="catalog__inner">
+                      <div class="catalog__inner--left">
+                        <div class="catalog__inner--img" >
+                        <img src="img/apartment.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+                     </div>
+                       <div class="catalog__inner--info">
+                        <h3><a href="#">Villas at Poco Diablo</a></h3>
+                        <p>Апартаменты</p>
+                        <p>ОТ 2000 Р.</p>
+                        <a class="more" href="#">ПОДРОБНЕЕ</a>
+                        <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
+                      </div>
+                    </div>
+                     <div class="catalog__inner--right" >
+                        <span class="reting"></span>
+                        <p class="rating">рейтинг: 9,2</p>
+                      </div>
+                    </li>
+
+                </ul>
+            </section>
+        </main>
+
+
+
+        <footer class="main-footer">
+            <p>#visitSEDONA</p>
+
+            <ul class="social-button-list">
                 <li>
-                    <img src="img/hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
-                    <h3><a href="#">Amara Resort & Spa</a></h3>
-                    <p>Гостиница</p>
-                    <p>ОТ 4000 Р.</p>
-                    <a class="more" href="#">ПОДРОБНЕЕ</a>
-                    <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
-                    <span class="reting"></span>
-                    <p class="rating">рейтинг: 8,5</p>
+                    <a class="social-button" href="#" aria-label="Мы в твиттер"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a>
                 </li>
                 <li>
-                    <img src="img/motel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-                    <h3><a href="#">Desert Quail Inn </a></h3>
-                    <p>Мотель</p>
-                    <p>ОТ 3000 Р.</p>
-                    <a class="more" href="#">ПОДРОБНЕЕ</a>
-                    <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
-                    <span class="reting"></span>
-                    <p class="rating">рейтинг: 8,9</p>
+                    <a class="social-button" href="#" aria-label="Мы в фейсбук"><img src="img/faceboock-icon.svg" width="12" height="22" alt="faceboock"></a>
                 </li>
                 <li>
-                    <img src="img/apartment.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
-                    <h3><a href="#">Villas at Poco Diablo</a></h3>
-                    <p>Апартаменты</p>
-                    <p>ОТ 2000 Р.</p>
-                    <a class="more" href="#">ПОДРОБНЕЕ</a>
-                    <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
-                    <span class="reting"></span>
-                    <p class="rating">рейтинг: 9,2</p>
+                    <a class="social-button" href="#" aria-label="Мы на ютубе"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a>
                 </li>
             </ul>
-        </section>
-    </main>
 
-    <footer>
-        <p>#visitSEDONA</p>
-        <ul>
-            <li><div class="wrapper">
-              <a class="social-button" href="#" aria-label="Мы в твиттер"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a>
-            </div> </li>
-            <li><div class="wrapper">
-              <a class="social-button" href="#" aria-label="Мы в фейсбук"><img src="img/faceboock-icon.svg" width="12" height="22" alt="faceboock"></a>
-            </div> </li>
-            <li><div class="wrapper">
-              <a class="social-button" href="#" aria-label="Мы на ютубе"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a>
-            </div> </li>
-        </ul>
-        <div class="webcite-by">
-            <span>Webcite by</span>
-            <a class="main-header-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-                <img src="img/logo.svg" width="115" height="41" alt="сайт htmlacademy">
-            </a>
-        </div>
-    </footer>
+            <div class="webcite-by">
+                <span>Webcite by</span>
+                <a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+                    <img src="img/logo.svg" width="115" height="41" alt="сайт htmlacademy">
+                </a>
+            </div>
+
+        </footer>
+
+
+    </div>
 </body>
 
 </html>
