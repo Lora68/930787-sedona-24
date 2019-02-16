@@ -18,14 +18,38 @@ body {
 
 a {
     text-decoration: none;
+  }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+visually-hidden:not(:focus):not(:active)
+/*input[type="checkbox"].visually-hidden;
+input[type="radio"];*/}
+
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow:hidden;
 }
 
 .main-header {}
 
 
-
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
     padding-left: 0;
@@ -35,7 +59,6 @@ a {
     font-weight: 700;
     color: #000000;
 }
-
 
 
 .site-navigation li:first-child{
@@ -226,6 +249,7 @@ a {
 .search {
     width: 570px;
     margin: 0 auto;
+
 }
 
 .wrapper_search a {
@@ -240,6 +264,7 @@ a {
     line-height: 18px;
     padding-top: 35px;
     padding-bottom: 33px;
+    margin-bottom: 63px;
 }
 
 .wrapper_search a:hover,
@@ -252,9 +277,16 @@ a {
     opacity: 0.3;
 }
 
-.search_form p {
+.search_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 568px;
+}
+.search_form p{
     font-weight: 700;
     color: #000000;
+    margin-bottom: 50px;
 }
 
 .search_item input,
@@ -263,6 +295,29 @@ a {
     color: #000000;
 }
 
+.search_data_check::after {
+  content: url(../img/calendar.svg);
+}
+
+.search_data_check label,
+.search_data_check input{
+  margin-right: 35px;
+  width: 250px;
+  border: none;
+}
+.search_human .search_item:nth-child(1) label{
+  margin-right: 53px;
+}
+.search_human .search_item:nth-child(2) label{
+  margin-right: 27px;
+  margin-left: 53px;
+}
+.search_human{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .button-search {
     background: #81b3d2;
     color: #ffffff;
@@ -272,6 +327,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     border: 0;
+    margin-bottom: 55px;
 }
 
 .button-search:hover {
@@ -364,15 +420,27 @@ a {
 
 .catalog__inner--info {
     margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 258px;
+    height: 90px;
 }
 .catalog__inner--info h3{
   margin-top: 0;
+  margin-bottom: 0;
 }
 .catalog__inner--info h3 a {
     color: #000000;
     font-size: 21px;
     font-weight: 700;
     text-decoration: none;
+    padding-right: 35px;
+}
+
+.catalog__inner--info .cost{
+  padding-right: 72px;
 }
 
 .catalog__inner--info h3 a:hover,
@@ -396,9 +464,9 @@ a {
 .catalog li .more {
     color: #ffffff;
     font-weight: 700;
-    padding: 17px 8px 17px 7px;
-
+    padding:  8px 17px 7px 17px;
     background-color: #81b3d2;
+    margin-right: 6px;
 }
 
 .catalog li .more:hover,
@@ -414,7 +482,7 @@ a {
 .catalog li .reserv {
     color: #ffffff;
     font-weight: 700;
-    padding: 16px 8px 16px 8px;
+    padding: 8px 16px 8px 16px ;
     background-color: #766357;
 }
 
