@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -15,30 +15,32 @@
 
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo">
+                <a href="index.html" class="main-header-logo">
                     <img src="img/index-logo.png" width="140" height="72" alt="Логотип Седона" class="logo">
                 </a>
                 <ul class="site-navigation">
+                  <div class="left">
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="foto.html">Фото и видео</a></li>
-                <li></li>
+                  </div>
+                  <div class="right">
                     <li><a href="img/map.png">Карта штата</a></li>
                     <li><a href="inner.html">Гостиницы</a></li>
+                  </div>
 
                 </ul>
             </nav>
         </header>
 
-        <main class="">
+        <main class="main">
             <div class="welcome">
                 <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Сидону">
-                <!-- <img src="img/polygon.svg" alt="Многоугольник" class="polygon"> -->
+                <img src="img/polygon.svg" alt="Многоугольник" class="polygon">
             </div>
 
+
             <section class="history">
-                <p>Седона — небольшой городок в Аризоне,
-                    заслуживающий большего!
-                </p>
+                <p>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </section>
 
@@ -46,9 +48,9 @@
 
                 <div class="advantage__inner">
                     <div class="advantage__text advantage__img--first">
-                        <h3>Настоящий городок</h3>
+                        <h3>Настоящий<br> городок</h3>
                         <p>— №1 —</p>
-                        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                        <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
                     </div>
                     <div class="advantage__img">
                         <img src="img/foto_1.png" width="800" height="256" alt="Фото Седоны">
@@ -74,29 +76,30 @@
                 </ul>
 
                 <div class="advantage__inner">
+
+                    <div class="advantage__text advantage__img--last">
+                        <h3>Там есть<br> Мост дьявола</h3>
+                        <p>— №2 —</p>
+                        <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+                    </div>
                     <div class="advantage__img">
                         <img src="img/foto_2.png" width="800" height="256" alt="Фото мост Седоны">
-                    </div>
-                    <div class="advantage__text advantage__img--last">
-                        <h3>Там есть Мост дьявола</h3>
-                        <p>— №2 —</p>
-                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                 </div>
 
                 <ul class="advantage_other">
                     <li>
-                        <h3>Небольшая площадь </h3>
+                        <h3>Небольшая<br> площадь </h3>
                         <p>— №3 —</p>
                         <p>Все достопримечательности <br>находятся очень близко </p>
                     </li>
                     <li>
-                        <h3>Красивая дорога </h3>
+                        <h3>Красивая<br> дорога </h3>
                         <p>— №4 —</p>
                         <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
                     </li>
                     <li>
-                        <h3>Мало туристов </h3>
+                        <h3>Мало<br> туристов </h3>
                         <p>№5</p>
                         <p>Большинство едет в гранд каньон<br> и толпится там </p>
                     </li>
@@ -106,52 +109,56 @@
 
             <!--interested-->
             <section class="interested">
-                <div class="interested__inner">
-                    <h2>Заинтересовались?</h2>
-                    <p class="search_info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                </div>
-
+              <div class="interested__inner">
+                  <h2>Заинтересовались?</h2>
+                  <p class="search_info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+              </div>
+              <!--map-->
+              <div class="map">
+                  <img src="img/map.png" alt="Карта штата">
+                  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.1356577629!2d-111.83015784377952!3d34.854443815250974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1549191066979" width="1200" height="474" style="border:0" allowfullscreen></iframe> -->
                 <!--search-->
                 <div class="search">
+
                     <div class="wrapper_search">
                         <a href="form.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
                     </div>
 
                     <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+
                         <p class="search_item search_data_check">
-                            <label for="search_data_check-in">Дата заезда</label>
-                            <input id="search_data_check-in" type="text" name="arrival-date" value="" placeholder="24.04.2017">
+                            <label for="search_data_check-in">Дата заезда:</label>
+                            <input id="search_data_check-in" type="text" name="arrival-date" value="" placeholder="24 АПРЕЛЯ 2017">
+                            <span class="calendar"></span>
                         </p>
 
                         <p class="search_item search_data_check">
-                            <label for="search_data_check-out">Дата выезда</label>
-                            <input id="search_data_check-out" type="text" name="departure-date" value="" placeholder="24.04.2017">
+                            <label for="search_data_check-out">Дата выезда:</label>
+                            <input id="search_data_check-out" type="text" name="departure-date" value="" placeholder="4 ИЮЛЯ 2017">
+                            <span class="calendar scalendar_second"></span>
                         </p>
                         <div class="search_human">
                           <p class="search_item">
-                              <label for="search_adult">Взрослые</label>
+                              <label for="search_adult">Взрослые:</label>
                               <button class="search_add" aria-label="Увеличить колчество взрослых">+</button>
-                              <input id="search_adult" type="number" name="adults" value="2" placeholder="2" min="0" max="10">
+                              <input id="search_adult" type="text" name="adults" value="2" placeholder="2" min="0" max="10">
                               <button class="subtract" aria-label="Уменьшить количество взрослых">-</button>
                           </p>
 
                           <p class="search_item">
-                              <label for="search_cildren">Дети</label>
+                              <label for="search_cildren">Дети:</label>
                               <button class="search_add" aria-label="Увеличить колчество детей">+</button>
-                              <input id="search_cildren" type="number" name="adults" value="2" placeholder="2" min="0" max="10">
+                              <input id="search_cildren" type="text" name="adults" value="2" placeholder="2" min="0" max="10">
                               <button class="subtract" aria-label="Увеличить колчество детей">-</button>
                           </p>
-                          <button class="button-search" type="submit">Найти</button>
-                        </div>
 
+                        </div>
+                          <button class="button-search" type="submit">Найти</button>
                     </form>
                 </div>
-
-                <!--map-->
-                <div class="map">
-                    <img src="img/map.png" width="1200" height="594" alt="Карта штата">
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.1356577629!2d-111.83015784377952!3d34.854443815250974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1549191066979" width="1200" height="474" style="border:0" allowfullscreen></iframe> -->
                 </div>
+
+
 
             </section>
 
@@ -173,9 +180,9 @@
             </ul>
 
             <div class="webcite-by">
-                <span>Webcite by</span>
+                <p>Webcite by</p>
                 <a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-                    <img src="img/logo.svg"  width="115" height="41" alt="сайт htmlacademy">
+                    <img src="img/logo.png"  width="115" height="41" alt="сайт htmlacademy">
                 </a>
             </div>
 
