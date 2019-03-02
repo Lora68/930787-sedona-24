@@ -553,8 +553,17 @@ img {
     background-color: #81b3d2;
 }
 
-.social-button-list img {
+.social-button-list svg {
     background-color: #81b3d2;
+}
+.social-button-list a:hover >svg,
+.social-button-list a:hover{
+  background-color: #669ec0;
+}
+.social-button a:focus >svg,
+.social-button a{
+  background-color: #5496bd;
+  opacity: 0.3;
 }
 
 .webcite-by {
@@ -601,15 +610,15 @@ img {
   border: none;
 }
 .filter fieldset:nth-child(2) {
-  padding-left: 35px;
+  padding-left: 40px;
 }
 .filter fieldset:nth-child(3) {
   padding-top: 12px;
-  padding-left: 20px;
+  padding-left: 21px;
 }
 .filter legend {
   padding-top: 10px;
-  padding-left: 53px;
+  padding-left: 54px;
   margin-bottom: 0px;
   color: #ffffff;
   font-family: "PT Sans";
@@ -844,6 +853,7 @@ img {
 
 .sort .sort_from label a > svg{
     padding-right: 12px;
+    padding-top: 25px;
     fill: #cacaca;
 }
 .sort .sort_from label a:hover > svg{

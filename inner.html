@@ -34,7 +34,7 @@
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
                 <fieldset>
-                   <legend>ИНФРАСТРУКТУРА :</legend>
+                   <legend>ИНФРАСТРУКТУРА:</legend>
                     <ul>
                      <li class="filter-option">
                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
@@ -90,86 +90,91 @@
 
 
 
-            <section class="appointment">
-                <h2 class="visually-hidden">Выбор гостиницы</h2>
-
-                <div class="sort">
-                    <div class="sort--inner">
-                        <p class="found">Найдено: 3</p>
-                        <div class="sort_tipes">
-                            <ul class="">Сортировка:</ul>
-                            <li><a href="#" class="by_cost">По цене</a></li>
-                            <li><a href="#" class="by_type">По типу</a></li>
-                            <li><a href="#" class="by_rate">По рейтингу</a></li>
-                        </div>
-                    </div>
-
-                    <div class="sort_from">
-                        <img src="img/up.svg" alt="Вверх">
-                        <img src="img/down.svg" alt="Вниз">
-                    </div>
+        <section class="appointment">
+            <h2 class="visually-hidden">Выбор гостиницы</h2>
+              <div class="sort">
+                <div class="sort--inner">
+                <p class="found">Найдено: 3</p>
+                  <div class="sort_tipes">
+                    <ul class="">Сортировка:</ul>
+                     <li><a href="#" class="by_cost">По цене</a></li>
+                     <li><a href="#" class="by_type">По типу</a></li>
+                     <li><a href="#" class="by_rate">По рейтингу</a></li>
+                  </div>
                 </div>
-          </section>
+            <div class="sort_from">
+                <label><a href="#" alt="вверх">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                  </svg></a></label>
+                  <label><a href="#" alt="вниз">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                    <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                    </svg></a></label>
 
-                <ul class="catalog">
+              </div>
+          </div>
+      </section>
 
-                    <li class="catalog__inner">
-                        <div class="catalog__inner--left">
-                            <div class="catalog__inner--img">
-                                <img src="img/hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort &amp; Spa">
-                            </div>
-                            <div class="catalog__inner--info">
-                                <h3 class="catalog__inner--title"><a href="#">Amara Resort &amp; Spa</a></h3>
-                                <div class="catalog__inner--text">
-                                    <p>Гостиница</p><a class="more" href="#">ПОДРОБНЕЕ</a>
-                                </div>
-                                <div class="catalog__inner--text">
-                                    <p class="cost">ОТ 4000 Р.</p>
-                                    <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
-                                </div>
-                            </div>
-                        </div>
+      <ul class="catalog">
+        <li class="catalog__inner">
+         <div class="catalog__inner--left">
+         <div class="catalog__inner--img">
+          <img src="img/hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort &amp; Spa">
+            </div>
+              <div class="catalog__inner--info">
+                  <h3 class="catalog__inner--title"><a href="#">Amara Resort &amp; Spa</a></h3>
+                  <div class="catalog__inner--text">
+                  <p>Гостиница</p><a class="more" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="catalog__inner--text">
+                  <p class="cost">ОТ 4000 Р.</p>
+                  <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
+              </div>
+            </div>
+        </div>
 
-                        <div class="catalog__inner--right">
-                            <div class="reting">
-                                <img src="img/star.svg" alt="звезда">
-                                <img src="img/star.svg" alt="звезда">
-                                <img src="img/star.svg" alt="звезда">
-                                <img src="img/star.svg" alt="звезда">
-                            </div>
-                            <span>рейтинг: 8,5</span>
+          <div class="catalog__inner--right">
+           <div class="reting">
+            <img src="img/star.svg" alt="звезда">
+            <img src="img/star.svg" alt="звезда">
+            <img src="img/star.svg" alt="звезда">
+            <img src="img/star.svg" alt="звезда">
+          </div>
+          <span>рейтинг: 8,5</span>
 
-                        </div>
-                    </li>
+          </div>
+        </li>
 
-                    <li class="catalog__inner">
-                        <div class="catalog__inner--left">
-                            <div class="catalog__inner--img">
-                                <img src="img/motel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-                            </div>
-                            <div class="catalog__inner--info">
-                                <h3 class="catalog__inner--title"><a href="#">Desert Quail Inn </a></h3>
-                                <div class="catalog__inner--text">
-                                    <p>Мотель</p>
-                                    <a class="more" href="#">ПОДРОБНЕЕ</a>
-                                </div>
-                                <div class="catalog__inner--text">
-                                    <p class="cost">ОТ 3000 Р.</p>
-                                    <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
-                                </div>
+        <li class="catalog__inner">
+        <div class="catalog__inner--left">
+          <div class="catalog__inner--img">
+            <img src="img/motel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+        </div>
+         <div class="catalog__inner--info">
+             <h3 class="catalog__inner--title"><a href="#">Desert Quail Inn </a></h3>
+            <div class="catalog__inner--text">
+            <p>Мотель</p>
+            <a class="more" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="catalog__inner--text">
+            <p class="cost">ОТ 3000 Р.</p>
+            <a class="reserv" href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
 
-                            </div>
-                        </div>
-                        <div class="catalog__inner--right">
-                            <div class="reting">
-                                <img src="img/star.svg" alt="звезда">
-                                <img src="img/star.svg" alt="звезда">
-                                <img src="img/star.svg" alt="звезда">
-                            </div>
-                            <span>рейтинг: 8,9</span>
-                        </div>
-
-                    </li>
+         </div>
+        </div>
+          <div class="catalog__inner--right">
+            <div class="reting">
+             <img src="img/star.svg" alt="звезда">
+             <img src="img/star.svg" alt="звезда">
+             <img src="img/star.svg" alt="звезда">
+          </div>
+          <span>рейтинг: 8,9</span>
+          </div>
+        </li>
 
                     <li class="catalog__inner">
                         <div class="catalog__inner--left">
@@ -197,7 +202,7 @@
                     </li>
 
                 </ul>
-            </section>
+
         </main>
 
         <footer class="main-footer">
@@ -205,13 +210,20 @@
 
             <ul class="social-button-list">
                 <li>
-                    <a class="social-button" href="#" aria-label="Мы в твиттер"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a>
+                    <a class="social-button" href="#" aria-label="Мы в твиттер">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+                        <g><g transform="translate(-579 -2695)"><image width="17" height="15" transform="translate(579 2695)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAABUElEQVQ4T53TsasNYBjH8c9PCndhYJFSdyEZpehM4h9QusnGXUSJxUb5CwySwXYXWQzKIKtMkhKTwaJMJEn34tFzOlen0zn3XJ7tfd7f833e5/e+b6pqG1aTlBlRVXvxEMewhge4jB04kKq6hjMYJPk1yamq/Xg3Khjf/oKduNCQpi7hbXdK8nVcWVVPcWrGIX/jWUPu4NJI9APXcTfJz85VVed65GnRpxk0ZBHvJxSreINXOI/MgFxMcq8hV9G+7Jtl7Ab500keNeQ2rvwHoEuOJHnZkD34MMX9edz2bCHJ2nDWqur7f4Jd8yrH9p8nGfR6HXIUL7DlHyBDU8chDevbOLRJyCcsJvn+FzIaaTduYHkT/iwl6W8wjDb2ZFNxGGfRsI3iVpKb44KG3Mc5bJ9T/LmfQpKVSd26sSdG/+c4DmLrSPgRr/EYK0m+TWv0Bze6bYV8NycKAAAAAElFTkSuQmCC"/></g></g></svg>
+                        </a>
+                <li>
+                    <a class="social-button" href="#" aria-label="Мы в фейсбук">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
+                        <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/>
+                         </a>
                 </li>
                 <li>
-                    <a class="social-button" href="#" aria-label="Мы в фейсбук"><img src="img/faceboock-icon.svg" width="12" height="22" alt="faceboock"></a>
-                </li>
-                <li>
-                    <a class="social-button" href="#" aria-label="Мы на ютубе"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a>
+                    <a class="social-button" href="#" aria-label="Мы на ютубе">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><g><g transform="translate(-681 -2694)"><image width="20" height="16" transform="translate(681 2694)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAsUlEQVQ4T7XUMU5CQRAA0LfESEjs7OisSKjoOAM0hNYbkHgICzs5DFRcgxIauAgyZE00BOMHPsvUu29nZ2cnRUQbC3TxoF7ssMQoRcQGL/WcP7u2GfxCoxC4z2AUwr6ZKvAdA/SvObAKHKeUZhHRwRTDS0pzFvzJLiKe8YlXNP/L+mLwCH7EByZ4OoVvAd/Qqg0Wu3LJRyneNte03+/au3y9FXLzloh1zjCPrzl6JcbXAfwiZ7tRzeOFAAAAAElFTkSuQmCC"/></g></g></svg>
+                    </a>
                 </li>
             </ul>
 
