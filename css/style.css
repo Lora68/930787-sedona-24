@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -199,7 +199,7 @@ img {
     width: 100%;
 }
 
-.advantage_1_include {
+.advantage_first_include {
     display: flex;
     justify-content: space-around;
     margin: 0;
@@ -207,35 +207,35 @@ img {
     list-style: none;
 }
 
-.advantage_1_include li {
+.advantage_first_include li {
     width: 400px;
-    padding: 134px 10px 62px 10px;
+    padding: 144px 10px 68px 10px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: 50% 24%;
     background-size: 75px 72px;
 }
 
-.advantage_1_include li:nth-child(1) {
+.advantage_first_include li:nth-child(1) {
     background-image: url(../img/home.svg);
 }
 
-.advantage_1_include li:nth-child(2) {
+.advantage_first_include li:nth-child(2) {
     background-image: url(../img/food.svg);
 }
 
-.advantage_1_include li:nth-child(3) {
+.advantage_first_include li:nth-child(3) {
     background-image: url(../img/souvenirs.svg);
 }
 
 
-.advantage_1_include li h4 {
+.advantage_first_include li h3 {
     font-size: 21px;
     color: #000000;
     font-weight: 700;
 }
 
-.advantage_1_include li p{
+.advantage_first_include li p{
   width: 300px;
   margin: auto;
   margin-bottom: 15px;
@@ -251,7 +251,7 @@ img {
 
 .advantage_other li {
     width: 400px;
-    padding: 28px 10px 37px 10px;
+    padding: 23px 10px 37px 10px;
     text-align: center;
 
 }
@@ -490,7 +490,7 @@ img {
     height: 58px;
     font-size: 21px;
     font-weight: 700;
-
+    text-transform: uppercase;
     border: 0;
     margin-top: 23px;
     box-sizing: border-box;
@@ -506,7 +506,7 @@ img {
 
 .button-submit:active {
     background: #5496bd;
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .main-footer {
@@ -522,7 +522,7 @@ img {
     left: 0;
     z-index: 10;
     width: 100%;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer .visit_sedona {
@@ -530,32 +530,26 @@ img {
     font-weight: 700;
     color: #000000;
     padding-left: 132px;
-    padding-right: 256px;
+
     padding-bottom: 10px;
 
 }
 
 .social-button-list {
-    margin: 0;
-    list-style: none;
-    padding-left: 0;
+    width: 150px;
+    margin: 0 auto;
     display: flex;
-
-}
-
-.social-button-list li {
-    width: 46px;
-    height: 48px;
-    margin: 3px;
-    margin-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 .social-button-list a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 46px;
+    height: 48px;
     background-color: #81b3d2;
 }
 
@@ -587,7 +581,9 @@ img {
 .webcite-by a > svg {
     padding-left: 8px;
     padding-top: 8px;
-    fill: #000000;
+}
+.webcite-by svg path{
+      fill: #000000;
 }
 
 
@@ -770,7 +766,7 @@ img {
   display: block;
   margin-left: 86px;
   padding: 6px 33px;
-
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -805,11 +801,8 @@ img {
 }
 
 .sort .sort_tipes {
-    display: flex;
-    flex-direction: row;
     padding-left: 7px;
-    padding-top: 6px;
-    list-style: none;
+    padding-top: 18px;
     align-items: center;
 }
 
@@ -826,6 +819,9 @@ img {
 .sort_tipes ul li{
   margin-left: 35px;
 }
+.sort_tipes ul li:nth-child(1){
+  margin-left: 0px;
+}
 
 .sort .sort_tipes a {
 font-size: 12px;
@@ -840,7 +836,7 @@ border-bottom: 1px dotted #81b3d2;
 .sort .sort_tipes a :focus {
 color: #81b3d2;
 }
-}
+
 .sort .sort_tipes a:active {
   color: #000000;
   opacity: 1;
@@ -851,7 +847,6 @@ color: #81b3d2;
   opacity: 1;
   border-bottom: none;
 }
-
 
 .sort .sort_from a > svg{
     padding-right: 3px;
@@ -933,26 +928,24 @@ color: #81b3d2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
 
-.stars-rating {
-    float: right;
-    padding-left: 5px;
-
-
-}
-.stars-rating > svg{
-  background: #fff;
 }
 .catalog__inner--right span {
     text-align: right;
     font-size: 14px;
     line-height: 21px;
     color: #666666;
-    background-color: #f2f2f2;
-    padding: 3px 15px;
     box-sizing: border-box;
 }
+.catalog__inner--right span:last-child {
+  width: 110px;
+  background: #f2f2f2;
+  text-align: center;
+}
+.stars-rating > svg{
+  background: #fff;
+}
+
 
 .more {
     color: #ffffff;
