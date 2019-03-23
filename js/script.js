@@ -11,28 +11,12 @@ button_search.addEventListener("click",function(evt){
 });
 
 form.addEventListener("submit", function(evt){
-  console.log(date_in);
-  console.log(date_out);
   if (!date_in.value || !date_out.value){
     evt.preventDefault();
     search_wrap.classList.add("form_error");
+    setTimeout(function () {
+      search_wrap.classList.remove("form_error");
+    }, 600);
   } else {
-    evt.preventDefault();
-    console.log("OK");
     }
   });
-
-  // form.addEventListener("submit", function (evt) {
-  //   console.log(date_in);
-  //   console.log(date_out);
-  //     if (!date_in.value || !date_out.value) {
-  //       evt.preventDefault();
-  //       search_wrap.classList.remove("form_error");
-  //       search_wrap.offsetWidth = search_wrap.offsetWidth;
-  //       search_wrap.classList.add("form_error");
-  //     } else {
-  //       if (isStorageSupport) {
-  //         localStorage.setItem("", date_out.value);
-  //       }
-  //     }
-  //   });

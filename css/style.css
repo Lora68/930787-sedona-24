@@ -740,7 +740,7 @@ img {
 }
 
 .filter ul {
-  padding: 10px 0 0 94px;
+  padding: 7px 0 0 90px;
   margin: 0px;
   list-style: none;
   line-height: 14px;
@@ -759,14 +759,14 @@ img {
 }
 .filter-input-checkbox:focus + label::before {
   border: 2px solid #4d90fe;
-  left: -47px;
-  top: -9px;
+  left: -43px;
+  top: -6px;
 }
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -45px;
-  top: -7px;
+  left: -41px;
+  top: -4px;
   width: 27px;
   height: 23px;
   background-image: url("../img/unchecked.svg");
@@ -775,22 +775,22 @@ img {
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  left: -45px;
-  top: -7px;
+  left: -41px;
+  top: -4px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
 }
 .filter-input-checkbox:checked:focus + label::before {
-  left: -47px;
-  top: -9px;
+  left: -43px;
+  top: -6px;
 }
 .filter-input-checkbox:disabled + label::before {
   content: "";
   position: absolute;
-  left: -45px;
-  top: -7px;
+  left: -41px;
+  top: -4px;
   width: 27px;
   height: 23px;
   background-image: url("../img/unchecked_disabled.svg");
@@ -799,8 +799,8 @@ img {
 .filter-input-checkbox:disabled:checked + label::before {
   content: "";
   position: absolute;
-  left: -45px;
-  top: -7px;
+  left: -41px;
+  top: -4px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checked_disabled.svg");
